@@ -37,6 +37,6 @@ class Database(object):
     pass
 
   def store_fingerprints(self, values):
-    self.insertMany(self.TABLE_FINGERPRINTS,
+    self.tuple(insertMany(self.TABLE_FINGERPRINTS,
       ['song_fk', 'hash', 'offset'], values
-    )
+    ))
