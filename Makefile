@@ -7,7 +7,7 @@ clean:
 	@find . -name \*.pyc -delete
 
 reset:
-	@python2 reset-database.py
+	@python3 reset-database.py
 
 tests:
 	@python3 tests/*.py
